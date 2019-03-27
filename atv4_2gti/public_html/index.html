@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,0" />
+        <title>Tendência de TI by Gartner 2019</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <link href="estiloscss.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript">
+            var divcheck = 0
+            div.style.display = "none"
+            function top1() {
+                var div = document.getElementById("divMensagem")
+                div.innerHTML = "De acordo com a consultoria, ao menos até 2020, a criação de sistemas que atuem de \n\
+                    forma autônoma será um importante campo de batalha para fornecedores de tecnologia. O desafio é ser capaz de usar\n\
+                    a inteligência artificial para aprimorar a tomada de decisões e reinventar modelos de negócios. A estimativa é que até 2025 \n\
+                    essas iniciativas sejam recompensadas ao refazer a experiência do cliente."
+                if (divcheck != 1) {
+                    div.style.display = "block"
+                    divcheck = 1
+                } else if (div.style.display == "block") {
+                    div.style.display = "none"
+                } else {
+                    div.style.display = "block"
+                    divcheck = 1
+                }
+            }
+            function top2() {
+                var div = document.getElementById("divMensagem")
+                div.innerHTML = "Os aplicativos inteligentes, conforme o Gartner, criam uma nova camada intermediária entre pessoas e\n\
+                    sistemas, com potencial de transformar a natureza do trabalho e a estrutura do local. A inteligência artificial também deve avançar\n\
+                    em softwares de gestão empresarial (ERP). Softwares e provedores de serviços integrados deverão elaborar estratégias para adicionar \n\
+                    valor comercial, com novas versões, sob a forma de analítica avançada."
+                if (divcheck != 2) {
+                    div.style.display = "block"
+                    divcheck = 2
+                } else if (div.style.display == "block") {
+                    div.style.display = "none"
+                } else {
+                    div.style.display = "block"
+                    divcheck = 2
+                }
+            }
+            function top3() {
+                var div = document.getElementById("divMensagem")
+                div.innerHTML = "As coisas inteligentes nada mais são que objetos que vão além da execução de modelos de programação\n\
+                    rígidos. Essas coisas exploram a inteligência artificial, para oferecer comportamentos avançados e interagir mais \n\
+                    naturalmente com seus arredores e com as pessoas. Alguns exemplos: veículos autônomos, robôs e drones. Através da chamada Internet das \n\
+                    Coisas (IoT – Internet of Things), esses objetos se conectam ao consumidor e a sistemas industriais."
+                if (divcheck != 3) {
+                    div.style.display = "block"
+                    divcheck = 3
+                } else if (div.style.display == "block") {
+                    div.style.display = "none"
+                } else {
+                    div.style.display = "block"
+                    divcheck = 3
+                }
+            }
+            function top4() {
+                var div = document.getElementById("divMensagem")
+                div.innerHTML = "Gêmeos digitais (digital twins) bem projetados de ativos têm o potencial de melhorar significativamente\n\
+                    a tomada de decisões empresariais. Eles possibilitam diferentes simulações e a previsão de danos que podem, assim, ser \n\
+                    evitados. Esse tipo de inovação está ligado a suas contrapartes do mundo real. A intenção é usar os gêmeos digitais para \n\
+                    entender o estado do produto ou sistema, responder a mudanças, melhorar as operações e agregar valor. As organizações devem implementar\n\
+                    essa tecnologia de maneira simplificada no início, para depois as desenvolver ao longo do tempo, melhorando sua capacidade de coletar\n\
+                    e visualizar os dados certos, aplicar analítica e regras corretas e responder cada vez mais efetivamente aos objetivos comerciais."
+                if (divcheck != 4) {
+                    div.style.display = "block"
+                    divcheck = 4
+                } else if (div.style.display == "block") {
+                    div.style.display = "none"
+                } else {
+                    div.style.display = "block"
+                    divcheck = 4
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="cimaum" class="col-sm-6 col-xs-12">
+                    <h4>O que deseja ler?</h4>
+                </div>
+                <div id="cimadois" class="col-sm-6 col-xs-12">
+                    <!--Tópicos aqui-->
+                    <input type="button" value="Base em Inteligência Artificial (IA)" onclick="top1()" />
+                    <br />
+                    <input type="button" value="Analítica e Aplicativos Inteligentes" onclick="top2()" />
+                    <br />
+                    <input type="button" value="Coisas Inteligentes" onclick="top3()" />
+                    <br />
+                    <input type="button" value="Gêmeos Digitais" onclick="top4()" />
+                </div>
+            </div>
+            <div class="row">
+                <div id="meio" class="col-12">   
+                    <!--Texto dos tópicos aparecem aqui-->
+                    <div id="divMensagem"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="baixoum" class="col-sm-6 col-xs-12">                         
+
+                </div>
+                <div id="baixodois" class="col-sm-6 col-xs-12">                       
+                    <a href="formulario.html"><h4 class="linke">Dúvidas</h4></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

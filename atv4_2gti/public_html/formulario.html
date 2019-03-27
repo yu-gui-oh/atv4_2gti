@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,0" />
+        <title>Tendência de TI by Gartner 2019</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <link href="estiloscss.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript">
+            function validar(){
+                var nome = $("#nome").val()
+                var email = $("#email").val()
+                var erro = false
+                
+                if ((nome.trim().indexOf(" ") == -1) || nome.length < 10){
+                    alert("Digite o nome completo")
+                    erro = true
+                }
+                if (document.forms[0].email.value == "" ||
+                    document.forms[0].email.value.indexOf('@') == -1 ||
+                    document.forms[0].email.value.indexOf('.') == -1){
+                    alert("Digite um email válido!")
+                    erro = true
+                }
+                if (erro == false){
+                    alert("Cadastrado com sucesso")
+                }
+                return false
+            }
+        </script>   
+        </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="cimaum" class="col-sm-6 col-xs-12">
+                    <h4>Possui uma dúvida? Manda pra gente!</h4>
+                </div>
+                <div id="subc" class="col-sm-6 col-xs-12">
+
+                </div>
+            </div>
+            <div class="row">
+                <div id="meio" class="col-12">   
+                    <form name="formulario" id="formulario" action="" method="post" onsubmit="return validar()">
+                        <br />
+                        <label>E-mail</label>    
+                        <input type="text" name="email" id="email" />
+                        <br />
+                        <label>Nome completo</label>
+                        <input type="text" name="nome" id="nome" />
+                        <br />
+                        <label>Dúvida</label>
+                        <input type="text" maxlength="400" name="duvida" id="duvida" />
+                        <br />
+                        <input type="submit" value="Enviar" />
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div id="subc2" class="col-sm-6 col-xs-12">                         
+
+                </div>
+                <div id="baixodois" class="col-sm-6 col-xs-12">                       
+                    <a href="index.html"><h4 class="linke">Voltar</h4></a>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

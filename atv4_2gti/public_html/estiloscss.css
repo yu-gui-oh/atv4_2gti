@@ -1,0 +1,70 @@
+#cimaum {
+    background-color: #117a8b;
+    height: 150px;
+}
+#cimadois {
+    padding-top: 10px;
+    background-color: #4e6d84;
+    height: 150px;    
+}
+#subc {
+    padding-top: 10px;
+    background-color: #4e6d84;
+    height: 150px;    
+}
+#subc2 {
+    padding-top: 10px;
+    background-color: #4e6d84;
+    height: 150px;    
+}
+#meio {
+    background-color: #c1d7e7;
+    height: 460px;    
+}
+#baixoum {
+    background-color: #4e6d84;
+    height: 150px;
+}
+#baixodois {
+    background-color: #117a8b;
+    height: 150px;
+}
+#divMensagem{
+    display: none;
+    /*position: absolute;*/
+    top: 100px;
+    left: 200px;
+    background-color: white;
+    padding: 10px;
+    margin: 8% auto;
+    max-width: 920px;
+}  
+h4{
+    margin: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+.linke{
+    color: darkgrey;
+}
+@media screen and (max-width: 425px){
+    #cimaum{
+        min-height: 80px;
+    }
+    #cimadois{
+        min-height: 70px;
+    }
+    #meio{
+        padding-bottom: 10px;
+        min-height: 200px;
+    }
+    #baixoum, #baixodois{
+        min-height: 70px;
+    }
+    #subc{
+        height: 30px;
+    }
+    #subc2{
+        height: 30px;
+    }
+}
